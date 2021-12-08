@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page .logo {
+  margin-top: 234px;
+  width: 171px;
+  height: 218px;
+}
+
+.login-page input {
+  margin: 140px 0 35px 0;
+  width: 345px;
+  height: 49px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 0 16px;
+  outline: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.login-page input::-webkit-outer-spin-button,
+.login-page input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-page .deck-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-page button {
+  width: 345px;
+  height: 72px;
+  background-color: #ffffff;
+  border: 3px solid #ffef61;
+  border-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page button img {
+  width: 22px;
+  height: 16px;
+}
