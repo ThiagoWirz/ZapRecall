@@ -1,42 +1,27 @@
-import turn from "../assets/turn.png";
 import miniLogo from "../assets/logo-mini.png";
 import "../css/flashcardPage.css";
+import Card from "./Card";
+import { useState } from "react";
 
 export default function FlashCardsPage() {
+  
+  const deck = [{question:"O que é JSX?", answer:"Uma extensão de linguagem do JavaScript"},
+  {question:"O React é __", answer:"uma biblioteca JavaScript para construção de interfaces"},
+  {question:"Componentes devem iniciar com __", answer:"letra maiúscula"},
+  {question:"Podemos colocar __ dentro do JSX", answer:"expressões"},
+  {question:"O ReactDOM nos ajuda __", answer:"interagindo com a DOM para colocar componentes React na mesma"},
+  {question:"Usamos o npm para __", answer:"gerenciar os pacotes necessários e pendencias"},
+  {question:"Usamos props para __", answer:"passar diferentes informações para componentes"},
+  {question:"Usamos estado (State) para __", answer:"dizer para o react quais informações atualizadas devem renderizar a tela novamente"},
+]
+
   return (
     <div className="flash-cards-page">
       <header>
         <img src={miniLogo} alt="" />
         <h1 className="title">React</h1>
       </header>
-      <div className="card">
-        <div className="front-face">
-          <span>1/8</span>
-          <h1>O que é JSX?</h1>
-          <button>
-            <img src={turn} alt="" />
-          </button>
-        </div>
-        <div className="back-face">
-          <span className="card-number">1/8</span>
-          <h1>O que é JSX</h1>
-          <p>Uma extensão de linguagem do JavaScript</p>
-          <div className="buttons-box">
-            <button className="button-1">
-              <span>Aprendi agora</span>
-            </button>
-            <button className="button-2">
-              <span>Não Lembrei</span>
-            </button>
-            <button className="button-3">
-              <span>Lembrei com esforço</span>
-            </button>
-            <button className="button-4">
-              <span>Zap!</span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <Card question = {deck[0].question} answer = {deck[0].answer} cardNumber = "1/8"/>
     </div>
   );
 }

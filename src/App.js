@@ -1,11 +1,19 @@
+import {useState} from "react";
 import HomePage from "./components/HomePage";
 import FlashCardsPage from "./components/FlashCardsPage";
 import "./css/reset.css"
 import "./css/style.css"
 
+
+
+
 export default function App() {
+  const [page, setPage] = useState("home")
+
   return (
-    // <HomePage />
-    <FlashCardsPage/>
+    <>
+    {page === "home" ? <HomePage setPage = {setPage} /> : ""}
+    {page === "card" ? <FlashCardsPage/> : ""}
+    </>
   )
 }

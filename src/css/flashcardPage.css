@@ -5,19 +5,19 @@
   align-items: center;
 }
 
-header {
+.flash-cards-page header {
   display: flex;
   justify-content: center;
 }
 
-header img {
+.flash-cards-page header img {
   height: 54px;
   position: absolute;
   top: 26px;
   left: 32px;
 }
 
-header .title {
+.flash-cards-page header .title {
   width: 73px;
   height: 33px;
   font-weight: bold;
@@ -26,7 +26,7 @@ header .title {
   margin: 80px 0 111px 0;
 }
 
-.card {
+.flash-cards-page .card {
   width: 392px;
   height: 578px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
@@ -37,7 +37,7 @@ header .title {
   align-items: center;
 }
 
-.card .card-number {
+.flash-cards-page .card .card-number {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -45,13 +45,13 @@ header .title {
   line-height: 21px;
 }
 
-.card .front-face h1 {
+.flash-cards-page .card .front-face h1 {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
 }
 
-.card .front-face button {
+.flash-cards-page .card .front-face button {
   position: absolute;
   right: 17px;
   bottom: 20px;
@@ -59,12 +59,12 @@ header .title {
   background-color: #ffffff;
 }
 
-.card .front-face button img {
+.flash-cards-page .card .front-face button img {
   width: 40px;
   height: 35px;
 }
 
-.card .back-face {
+.flash-cards-page .card .back-face {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -72,48 +72,47 @@ header .title {
   align-items: center;
 }
 
-.card .back-face h1 {
+.flash-cards-page .card .back-face h1 {
   margin-top: 19px;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
 }
 
-.card .back-face p {
+.flash-cards-page .card p {
   margin: 0 49px;
 }
 
-.card .back-face .buttons-box {
+.flash-cards-page .card .back-face .button-box {
   width: 310px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 19px;
 }
-.card .back-face button {
+.flash-cards-page .card .back-face button {
   width: 65px;
   height: 48px;
-  border: none;
   font-size: 10px;
   line-height: 12px;
   background-color: #ffffff;
+  border-radius: 12px;
 }
 
-.card .back-face .button-1 {
+.flash-cards-page .card .back-face .button-1 {
   border: 3px solid #000000;
-  border-radius: 12px;
 }
 
-.card .back-face .button-2 {
+.flash-cards-page .card .back-face .button-2 {
   border: 3px solid #ff0000;
-  border-radius: 12px;
 }
-.card .back-face .button-3 {
+.flash-cards-page .card .back-face .button-3 {
   border: 3px solid #00ff00;
-  border-radius: 12px;
 }
-.card .back-face .button-4 {
+.flash-cards-page .card .back-face .button-4 {
   border: 3px solid #ffff00;
-  border-radius: 12px;
+}
+
+.flash-cards-page .card .back-face .button-4 span {
   font-weight: bold;
 }
