@@ -49,6 +49,8 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
+  width: 294px;
+  text-align: center;
 }
 
 .flash-cards-page .card .front-face button {
@@ -59,7 +61,8 @@
   background-color: #ffffff;
 }
 
-.flash-cards-page .card .front-face button img {
+.flash-cards-page .card .front-face button img,
+.flash-cards-page .card .result-card button img {
   width: 40px;
   height: 35px;
 }
@@ -81,6 +84,7 @@
 
 .flash-cards-page .card p {
   margin: 0 49px;
+  text-align: center;
 }
 
 .flash-cards-page .card .back-face .button-box {
@@ -115,4 +119,54 @@
 
 .flash-cards-page .card .back-face .button-4 span {
   font-weight: bold;
+}
+
+.flash-cards-page .card .result-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flash-cards-page .card .result-card h1 {
+  position: absolute;
+  top: 11px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.flash-cards-page .card .result-card button {
+  position: absolute;
+  right: 17px;
+  bottom: 20px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.flash-cards-page .card.button-1 {
+  border: 5px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.flash-cards-page .card.button-2 {
+  border: 5px solid #FF0000;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px rgba(246, 72, 72, 0.12);
+  border-radius: 12px;
+}
+.flash-cards-page .card.button-3 {
+  border: 5px solid #00FF00;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px rgba(98, 219, 56, 0.12);
+  border-radius: 12px;
+}
+.flash-cards-page .card.button-4 {
+  border: 5px solid #FFFF00;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px rgba(255, 239, 97, 0.12);
+  border-radius: 12px;
 }

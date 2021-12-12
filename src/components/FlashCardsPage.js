@@ -3,7 +3,12 @@ import "../css/flashcardPage.css";
 import Card from "./Card";
 import { useState } from "react";
 
-export default function FlashCardsPage() {
+ 
+
+export default function FlashCardsPage({setPage}) {
+
+  const [card, setCard] = useState(0)
+  const [win, setWin] = useState(true)
   
   const deck = [{question:"O que é JSX?", answer:"Uma extensão de linguagem do JavaScript"},
   {question:"O React é __", answer:"uma biblioteca JavaScript para construção de interfaces"},
@@ -21,7 +26,7 @@ export default function FlashCardsPage() {
         <img src={miniLogo} alt="" />
         <h1 className="title">React</h1>
       </header>
-      <Card question = {deck[0].question} answer = {deck[0].answer} cardNumber = "1/8"/>
+      <Card question = {deck[card].question} answer = {deck[card].answer} card = {card+1} length = {deck.length} setCard = {setCard} setPage = {setPage} setWin = {setWin} win = {win} />
     </div>
   );
 }

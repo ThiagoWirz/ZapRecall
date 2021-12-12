@@ -13,7 +13,9 @@ export default function App() {
   return (
     <>
     {page === "home" ? <HomePage setPage = {setPage} /> : ""}
-    {page === "card" ? <FlashCardsPage/> : ""}
+    {page === "card" ? <FlashCardsPage setPage = {setPage} /> : ""}
+    {page === "win" ? <>Miajuda</> : ""}
+    {page === "lose" ? <>Por favor</> : ""}
     </>
   )
 }
