@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100vh;
   width: 100vw;
+  font-family: "Roboto", sans-serif;
 }
