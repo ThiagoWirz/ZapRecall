@@ -18,7 +18,10 @@ export default function BackFace({
 
   return (
     <div className="back-face">
-      <span className="card-number">{`${card}/${length}`}</span>
+      <span
+        data-identifier="counter"
+        className="card-number"
+      >{`${card}/${length}`}</span>
       <h1>{question}</h1>
       <p>{answer}</p>
       <div className="button-box">

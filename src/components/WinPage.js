@@ -15,10 +15,10 @@ export default function WinPage({
         <img src={miniLogo} alt="" />
       </header>
       <h1>
-        parabéns
+        PARABÉNS!
         <img src={emoji} alt="" />
       </h1>
-      <span>Você não esqueceu de nenhum flashcard!</span>
+      <span>Você atingiu a sua meta!</span>
       <button
         onClick={() => restartGame(setPage, setDeck, setWin, setCard, setGoal)}
       >

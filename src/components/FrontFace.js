@@ -7,10 +7,13 @@ export default function FrontFace({
 }) {
   return (
     <div className="front-face">
-      <span className="card-number">{`${card}/${length}`}</span>
+      <span
+        data-identifier="counter"
+        className="card-number"
+      >{`${card}/${length}`}</span>
       <h1>{question}</h1>
       <button onClick={() => setFaceCard("back")}>
-        <img src={img} alt="" />
+        <img data-identifier="arrow" src={img} alt="" />
       </button>
     </div>
   );

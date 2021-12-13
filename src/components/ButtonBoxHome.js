@@ -6,16 +6,24 @@ export default function ButtonsBoxHome({
   setDeck,
   goal,
   setGoal,
+  decks,
 }) {
   return (
-    <button onClick={() => startGame(setDeck, title, setPage, goal, setGoal)}>
+    <button
+      data-identifier="start-zap-recall"
+      onClick={() => startGame(setDeck, title, setPage, goal, setGoal, decks)}
+    >
       {text}
       <img src={img.nextArrow} alt="" />
     </button>
   );
 }
 
-function startGame(setDeck, title, setPage, goal, setGoal) {
+function startGame(setDeck, title, setPage, goal, setGoal, decks) {
+  const selectedDeck = decks.find((selected) => selected.title === title);
+
+  setDeck(selectedDeck);
+
   if (goal === "") {
     alert("A meta de zap não pode está vazio");
     return;
@@ -29,7 +37,10 @@ function startGame(setDeck, title, setPage, goal, setGoal) {
     alert("A meta de zap tem que ser maior que 1");
     return;
   }
+  if (goal > selectedDeck.cards.length) {
+    alert("A meta de zap não pode ser maior que o deck");
+    return;
+  }
   setGoal(parseInt(goal));
-  setDeck(title);
   setPage("card");
 }

@@ -8,6 +8,8 @@ export default function LosePage({
   setWin,
   setCard,
   setGoal,
+  win,
+  goal,
 }) {
   return (
     <div className="lose-page">
@@ -19,7 +21,7 @@ export default function LosePage({
         <img src={emoji} alt="" />
       </h1>
       <span>
-        Você esqueceu 2 flashcards..
+        Você acertou apenas {win} da sua meta de {goal}
         <br />
         Não desanime! Na próxima você consegue!
       </span>

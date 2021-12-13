@@ -19,7 +19,7 @@ export default function Card({
   const [faceCard, setFaceCard] = useState("front");
 
   return (
-    <div className={`card ${border}`}>
+    <div data-identifier="flashcard" className={`card ${border}`}>
       {faceCard === "front" ? (
         <FrontFace
           question={question}

@@ -3,7 +3,7 @@ import nextArrow from "../assets/next.png";
 import "../css/homePage.css";
 import ButtonBoxHome from "./ButtonBoxHome";
 
-export default function HomePage({ setPage, setDeck, setGoal, goal }) {
+export default function HomePage({ setPage, setDeck, setGoal, goal, decks }) {
   const buttons = [
     {
       title: "React",
@@ -36,6 +36,7 @@ export default function HomePage({ setPage, setDeck, setGoal, goal }) {
             setDeck={setDeck}
             goal={goal}
             setGoal={setGoal}
+            decks={decks}
           />
         ))}
       </div>
