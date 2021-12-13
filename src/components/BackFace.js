@@ -11,7 +11,7 @@ export default function BackFace({
 }) {
   const buttons = [
     { text: "Aprendi agora", number: "button-1" },
-    { text: "Não Lembrei", number: "button-2" },
+    { text: "Não lembrei", number: "button-2" },
     { text: "Lembrei com esforço", number: "button-3" },
     { text: "Zap!", number: "button-4" },
   ];

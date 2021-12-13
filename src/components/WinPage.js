@@ -22,7 +22,7 @@ export default function WinPage({
       <button
         onClick={() => restartGame(setPage, setDeck, setWin, setCard, setGoal)}
       >
-        Tentar Novamente! <img src={nextArrow} alt="" />
+        Tentar Novamente <img src={nextArrow} alt="" />
       </button>
     </div>
   );
